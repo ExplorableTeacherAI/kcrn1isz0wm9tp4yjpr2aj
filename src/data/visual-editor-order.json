@@ -94,22 +94,11 @@
       }
     },
     {
-      "id": "editor-full-factors-definition",
-      "type": "stack",
-      "columns": [
-        [
-          "factors-definition"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
-      }
-    },
-    {
       "id": "layout-multiples-definition",
       "type": "split",
       "columns": [
         [
+          "factors-definition",
           "multiples-definition"
         ],
         [
