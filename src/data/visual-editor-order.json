@@ -1,4 +1,709 @@
 {
-  "version": 2,
-  "blockIds": []
+  "version": 3,
+  "blockIds": [
+    "lesson-title",
+    "lesson-overview",
+    "factors-multiples-heading",
+    "factors-definition",
+    "multiples-definition",
+    "factors-multiples-grid",
+    "factors-multiples-grid-guidance",
+    "factors-multiples-question",
+    "factors-multiples-challenge-answer",
+    "factors-multiples-answer",
+    "factors-multiples-challenge",
+    "primes-heading",
+    "primes-definition",
+    "primes-building-blocks",
+    "primes-factor-tree",
+    "primes-index-form-example",
+    "primes-index-form-explanation",
+    "primes-question",
+    "primes-answer",
+    "primes-check-question",
+    "primes-check-answer",
+    "highest-common-factor-heading",
+    "highest-common-factor-idea",
+    "highest-common-factor-venn",
+    "highest-common-factor-venn-guidance",
+    "highest-common-factor-worked-example",
+    "highest-common-factor-rule",
+    "highest-common-factor-question",
+    "highest-common-factor-answer",
+    "highest-common-factor-word-question",
+    "highest-common-factor-word-answer",
+    "lowest-common-multiple-heading",
+    "lowest-common-multiple-idea",
+    "lowest-common-multiple-venn",
+    "lowest-common-multiple-worked-example",
+    "lowest-common-multiple-rule",
+    "lowest-common-multiple-multiply-warning",
+    "lowest-common-multiple-order-scale",
+    "lowest-common-multiple-order-explanation",
+    "lowest-common-multiple-question",
+    "lowest-common-multiple-answer",
+    "lowest-common-multiple-check-question",
+    "lowest-common-multiple-check-answer",
+    "choosing-method-heading",
+    "choosing-method-intro",
+    "choosing-method-table",
+    "choosing-method-shortcut",
+    "choosing-method-bus-question",
+    "choosing-method-bus-answer",
+    "choosing-method-tile-question",
+    "choosing-method-tile-answer",
+    "choosing-method-mixed-question",
+    "choosing-method-mixed-answer",
+    "choosing-method-summary"
+  ],
+  "rows": [
+    {
+      "id": "layout-lesson-title",
+      "type": "stack",
+      "columns": [
+        [
+          "lesson-title"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-lesson-overview",
+      "type": "stack",
+      "columns": [
+        [
+          "lesson-overview"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-factors-multiples-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "factors-multiples-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-factors-definition",
+      "type": "stack",
+      "columns": [
+        [
+          "factors-definition"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-multiples-definition",
+      "type": "stack",
+      "columns": [
+        [
+          "multiples-definition"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-factors-multiples-grid",
+      "type": "stack",
+      "columns": [
+        [
+          "factors-multiples-grid"
+        ]
+      ],
+      "props": {
+        "maxWidth": "2xl"
+      }
+    },
+    {
+      "id": "layout-factors-multiples-grid-guidance",
+      "type": "stack",
+      "columns": [
+        [
+          "factors-multiples-grid-guidance"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-factors-multiples-question",
+      "type": "stack",
+      "columns": [
+        [
+          "factors-multiples-question"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "editor-full-factors-multiples-challenge-answer",
+      "type": "stack",
+      "columns": [
+        [
+          "factors-multiples-challenge-answer"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-factors-multiples-answer",
+      "type": "stack",
+      "columns": [
+        [
+          "factors-multiples-answer"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-factors-multiples-challenge",
+      "type": "stack",
+      "columns": [
+        [
+          "factors-multiples-challenge"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-primes-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "primes-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-primes-definition",
+      "type": "stack",
+      "columns": [
+        [
+          "primes-definition"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-primes-building-blocks",
+      "type": "stack",
+      "columns": [
+        [
+          "primes-building-blocks"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-primes-factor-tree",
+      "type": "stack",
+      "columns": [
+        [
+          "primes-factor-tree"
+        ]
+      ],
+      "props": {
+        "maxWidth": "2xl"
+      }
+    },
+    {
+      "id": "layout-primes-index-form-example",
+      "type": "stack",
+      "columns": [
+        [
+          "primes-index-form-example"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-primes-index-form-explanation",
+      "type": "stack",
+      "columns": [
+        [
+          "primes-index-form-explanation"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-primes-question",
+      "type": "stack",
+      "columns": [
+        [
+          "primes-question"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-primes-answer",
+      "type": "stack",
+      "columns": [
+        [
+          "primes-answer"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-primes-check-question",
+      "type": "stack",
+      "columns": [
+        [
+          "primes-check-question"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-primes-check-answer",
+      "type": "stack",
+      "columns": [
+        [
+          "primes-check-answer"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-highest-common-factor-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "highest-common-factor-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-highest-common-factor-idea",
+      "type": "stack",
+      "columns": [
+        [
+          "highest-common-factor-idea"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-highest-common-factor-venn",
+      "type": "stack",
+      "columns": [
+        [
+          "highest-common-factor-venn"
+        ]
+      ],
+      "props": {
+        "maxWidth": "2xl"
+      }
+    },
+    {
+      "id": "layout-highest-common-factor-venn-guidance",
+      "type": "stack",
+      "columns": [
+        [
+          "highest-common-factor-venn-guidance"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-highest-common-factor-worked-example",
+      "type": "stack",
+      "columns": [
+        [
+          "highest-common-factor-worked-example"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-highest-common-factor-rule",
+      "type": "stack",
+      "columns": [
+        [
+          "highest-common-factor-rule"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-highest-common-factor-question",
+      "type": "stack",
+      "columns": [
+        [
+          "highest-common-factor-question"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-highest-common-factor-answer",
+      "type": "stack",
+      "columns": [
+        [
+          "highest-common-factor-answer"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-highest-common-factor-word-question",
+      "type": "stack",
+      "columns": [
+        [
+          "highest-common-factor-word-question"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-highest-common-factor-word-answer",
+      "type": "stack",
+      "columns": [
+        [
+          "highest-common-factor-word-answer"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-idea",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-idea"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-venn",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-venn"
+        ]
+      ],
+      "props": {
+        "maxWidth": "2xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-worked-example",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-worked-example"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-rule",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-rule"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-multiply-warning",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-multiply-warning"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-order-scale",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-order-scale"
+        ]
+      ],
+      "props": {
+        "maxWidth": "2xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-order-explanation",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-order-explanation"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-question",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-question"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-answer",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-answer"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-check-question",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-check-question"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-lowest-common-multiple-check-answer",
+      "type": "stack",
+      "columns": [
+        [
+          "lowest-common-multiple-check-answer"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-method-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-method-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-method-intro",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-method-intro"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-method-table",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-method-table"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-method-shortcut",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-method-shortcut"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-method-bus-question",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-method-bus-question"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-method-bus-answer",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-method-bus-answer"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-method-tile-question",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-method-tile-question"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-method-tile-answer",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-method-tile-answer"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-method-mixed-question",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-method-mixed-question"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-method-mixed-answer",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-method-mixed-answer"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-choosing-method-summary",
+      "type": "stack",
+      "columns": [
+        [
+          "choosing-method-summary"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    }
+  ]
 }
