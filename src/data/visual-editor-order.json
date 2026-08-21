@@ -8,8 +8,8 @@
     "multiples-definition",
     "factors-multiples-grid-guidance",
     "factors-multiples-question",
-    "factors-multiples-grid",
     "factors-multiples-challenge-answer",
+    "factors-multiples-grid",
     "factors-multiples-answer",
     "factors-multiples-challenge",
     "primes-heading",
@@ -101,7 +101,8 @@
           "factors-definition",
           "multiples-definition",
           "factors-multiples-grid-guidance",
-          "factors-multiples-question"
+          "factors-multiples-question",
+          "factors-multiples-challenge-answer"
         ],
         [
           "factors-multiples-grid"
@@ -112,18 +113,6 @@
         "gap": "lg",
         "reverse": false,
         "align": "start"
-      }
-    },
-    {
-      "id": "editor-full-factors-multiples-challenge-answer",
-      "type": "stack",
-      "columns": [
-        [
-          "factors-multiples-challenge-answer"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
       }
     },
     {
