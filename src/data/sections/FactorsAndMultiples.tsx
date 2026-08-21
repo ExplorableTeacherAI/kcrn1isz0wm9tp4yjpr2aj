@@ -25,12 +25,6 @@ export const factorsAndMultiplesBlocks: ReactElement[] = [
         </Block>
     </StackLayout>,
 
-    <StackLayout key="layout-block-1787314911146" maxWidth="xl">
-        <Block id="block-1787314911146" padding="sm">
-            <EditableParagraph id="para-block-1787314911146" blockId="block-1787314911146">/</EditableParagraph>
-        </Block>
-    </StackLayout>,
-
     <StackLayout key="layout-factors-definition" maxWidth="xl">
         <Block id="factors-definition" padding="sm">
             <EditableParagraph id="para-factors-definition" blockId="factors-definition">

@@ -4,7 +4,6 @@
     "lesson-title",
     "lesson-overview",
     "factors-multiples-heading",
-    "block-1787314911146",
     "factors-definition",
     "multiples-definition",
     "factors-multiples-grid-guidance",
@@ -88,18 +87,6 @@
       "columns": [
         [
           "factors-multiples-heading"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
-      }
-    },
-    {
-      "id": "layout-block-1787314911146",
-      "type": "stack",
-      "columns": [
-        [
-          "block-1787314911146"
         ]
       ],
       "props": {
