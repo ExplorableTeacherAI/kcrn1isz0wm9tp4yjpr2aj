@@ -82,24 +82,20 @@ setVar('amplitude', 2.5);
 
 ## InlineFormula (Inline Math)
 
-`InlineFormula` renders a KaTeX math formula inline within paragraph text, with optional colored variables using `\clr{name}{content}` syntax. Does **NOT** use the variable store.
+`InlineFormula` renders a static KaTeX formula inline within paragraph text. It has no interaction and does not use the variable store.
 
 ```tsx
 <EditableParagraph id="para-formula-area" blockId="formula-circle-area">
-    For example, the total 2D space encapsulated by a boundary is measured as the{" "}
-    <InlineFormula
-        latex="\clr{area}{A} = \clr{pi}{\pi} \clr{radius}{r}^2"
-        colorMap={{ area: '#ef4444', pi: '#3b82f6', radius: '#3cc499' }}
-    />
-    . Here, the term <InlineFormula latex="\clr{radius}{r}" colorMap={{radius: '#3cc499'}} /> explicitly represents the radius.
+    The area of a circle is <InlineFormula latex="A = \pi r^2" />, where{" "}
+    <InlineFormula latex="r" /> is the radius.
 </EditableParagraph>
 ```
 
 | Prop | Type | Default | Purpose |
 |------|------|---------|---------|
 | `latex` | `string` | *(required)* | LaTeX formula string — use single `\` for commands (see escaping rule below) |
-| `colorMap` | `Record<string, string>` | `{}` | Term name → hex color mapping for `\clr{}{}` |
-| `color` | `string` | `#8B5CF6` | Wrapper accent color (violet) |
+
+`FormulaBlock` (import from `@/components/molecules`) renders the same kind of static formula as a centred, display-size block: `<FormulaBlock latex="F = m \times a" />`.
 
 ### Critical Rule: LaTeX Escaping in JSX String Attributes
 
@@ -109,13 +105,13 @@ In JSX string attributes (`latex="..."`), a single backslash is passed through l
 
 ```tsx
 // WRONG — double backslash produces "\\sin" which KaTeX cannot parse
-<InlineFormula latex="y = A\\sin(\\omega x + \\phi)" colorMap={{}} />
+<InlineFormula latex="y = A\\sin(\\omega x + \\phi)" />
 
 // CORRECT — single backslash produces "\sin" which KaTeX renders properly
-<InlineFormula latex="y = A\sin(\omega x + \phi)" colorMap={{}} />
+<InlineFormula latex="y = A\sin(\omega x + \phi)" />
 ```
 
-This applies to **all** LaTeX commands: `\sin`, `\cos`, `\omega`, `\pi`, `\phi`, `\alpha`, `\frac`, `\sqrt`, `\sum`, `\int`, `\clr`, etc.
+This applies to **all** LaTeX commands: `\sin`, `\cos`, `\omega`, `\pi`, `\phi`, `\alpha`, `\frac`, `\sqrt`, `\sum`, `\int`, etc.
 
 ### Critical Rule: ASCII-Only LaTeX — Never Paste Unicode Math Characters
 
@@ -125,10 +121,10 @@ boxes in the lesson. Always write the LaTeX command form:
 
 ```tsx
 // WRONG — Unicode î/ĵ render as broken boxes
-<InlineFormula latex="a\,î + b\,ĵ + c\,k̂" colorMap={{}} />
+<InlineFormula latex="a\,î + b\,ĵ + c\,k̂" />
 
 // CORRECT — LaTeX accent commands with dotless \imath/\jmath
-<InlineFormula latex="a\hat{\imath} + b\hat{\jmath} + c\hat{k}" colorMap={{}} />
+<InlineFormula latex="a\hat{\imath} + b\hat{\jmath} + c\hat{k}" />
 ```
 
 | Never type | Write instead |
@@ -145,7 +141,7 @@ boxes in the lesson. Always write the LaTeX command form:
 
 ```tsx
 // CORRECT
-<FormulaBlock latex="\clr{force}{F} = \clr{mass}{m} \times \clr{acceleration}{a}" ... />
+<FormulaBlock latex="F = m \times a" />
 ```
 
 ## InlineHyperlink (Click to Navigate)
@@ -435,8 +431,8 @@ happens to accept) is a TypeScript error that fails the build. The exact unions:
 
 ### Math Components
 
-- `InlineFormula` — inline math formula with colored variables (no variable store, import from `@/components/atoms`)
-- `FormulaBlock` — block-level math display with coloured terms and live `\val{}` readouts (import from `@/components/molecules`)
+- `InlineFormula` — static inline math formula (import from `@/components/atoms`)
+- `FormulaBlock` — static block-level math display (import from `@/components/molecules`)
 
 ### Visual Components (import from `@/components/atoms`)
 
@@ -617,10 +613,7 @@ The table reads its accent colour from the global variable store (via `varName`)
                 {
                     cells: [
                         'Area formula',
-                        <InlineFormula
-                            latex="\pi r^2"
-                            colorMap={{}}
-                        />,
+                        <InlineFormula latex="\pi r^2" />,
                         'Computed from radius',
                     ],
                     highlight: true,

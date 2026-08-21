@@ -78,15 +78,9 @@ const parseContentWithInlineComponents = (content: string): React.ReactNode[] =>
                 break;
             }
             case "inlineFormula": {
-                const p = savedProps as { latex?: string; colorMap?: Record<string, string>; color?: string } | null;
+                const p = savedProps as { latex?: string } | null;
                 parts.push(
-                    <InlineFormula
-                        key={uniqueId}
-                        id={uniqueId}
-                        latex={p?.latex ?? "x^2"}
-                        colorMap={p?.colorMap}
-                        color={p?.color}
-                    />
+                    <InlineFormula key={uniqueId} id={uniqueId} latex={p?.latex ?? "x^2"} />
                 );
                 break;
             }
@@ -410,24 +404,6 @@ export const LessonView = ({ onEditBlock }: LessonViewProps) => {
                         contentElement = (
                             <hr className="my-6 border-t border-gray-200" />
                         );
-                        break;
-                    case "formulaBlock":
-                        contentElement = (
-                            <FormulaBlock
-                                latex={content || "E = mc^2"}
-                                colorMap={{}}
-                            />
-                        );
-                        // Open the editor modal for the new formula block
-                        if (editing) {
-                            setTimeout(() => {
-                                editing.openFormulaBlockEditor(
-                                    { latex: content || "E = mc^2", colorMap: {}, isNew: true },
-                                    blockId,
-                                    `formulaBlock-${blockId}`
-                                );
-                            }, 100);
-                        }
                         break;
                     case "paragraph":
                     default:
