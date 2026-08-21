@@ -73,6 +73,16 @@ initializeVariableColors(variableDefinitions);
  * check your .env file and set VITE_SHOW_EXAMPLES=false.
  */
 
+import { factorsAndMultiplesBlocks } from "./sections/FactorsAndMultiples";
+import { breakingNumbersIntoPrimesBlocks } from "./sections/BreakingNumbersIntoPrimes";
+import { highestCommonFactorBlocks } from "./sections/HighestCommonFactor";
+import { lowestCommonMultipleBlocks } from "./sections/LowestCommonMultiple";
+import { whichOneDoINeedBlocks } from "./sections/WhichOneDoINeed";
+
 export const blocks: ReactElement[] = [
-    // Start adding your blocks here!
+    ...factorsAndMultiplesBlocks,
+    ...breakingNumbersIntoPrimesBlocks,
+    ...highestCommonFactorBlocks,
+    ...lowestCommonMultipleBlocks,
+    ...whichOneDoINeedBlocks,
 ];

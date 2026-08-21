@@ -74,8 +74,61 @@ export interface VariableDefinition {
  */
 export const variableDefinitions: Record<string, VariableDefinition> = {
     // ========================================
-    // ADD YOUR VARIABLES HERE
+    // HCF & LCM LESSON VARIABLES
     // ========================================
+
+    exploreNumber: {
+        defaultValue: 12,
+        type: 'number',
+        label: 'Chosen number',
+        description: 'The number whose factors or multiples are highlighted in the number grid',
+        min: 2,
+        max: 36,
+        step: 1,
+        color: '#6366f1',
+    },
+
+    exploreMode: {
+        defaultValue: 'Factors',
+        type: 'select',
+        label: 'Show',
+        description: 'Whether the number grid highlights factors of the chosen number or multiples of it',
+        options: ['Factors', 'Multiples'],
+        color: '#6366f1',
+    },
+
+    treeNumber: {
+        defaultValue: 36,
+        type: 'number',
+        label: 'Number to split',
+        description: 'The number broken down into prime factors by the factor tree',
+        min: 4,
+        max: 100,
+        step: 1,
+        color: '#0ea5e9',
+    },
+
+    firstNumber: {
+        defaultValue: 24,
+        type: 'number',
+        label: 'First number',
+        description: 'First of the two numbers used for the HCF and LCM comparison',
+        min: 2,
+        max: 60,
+        step: 1,
+        color: '#3b82f6',
+    },
+
+    secondNumber: {
+        defaultValue: 36,
+        type: 'number',
+        label: 'Second number',
+        description: 'Second of the two numbers used for the HCF and LCM comparison',
+        min: 2,
+        max: 60,
+        step: 1,
+        color: '#ec4899',
+    },
 
     // Uncomment and modify these examples for your lesson:
 
