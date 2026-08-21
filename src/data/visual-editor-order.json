@@ -3,6 +3,7 @@
   "blockIds": [
     "lesson-title",
     "lesson-overview",
+    "block-1787320097468",
     "factors-multiples-heading",
     "factors-definition",
     "multiples-definition",
@@ -75,6 +76,18 @@
       "columns": [
         [
           "lesson-overview"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-block-1787320097468",
+      "type": "stack",
+      "columns": [
+        [
+          "block-1787320097468"
         ]
       ],
       "props": {
