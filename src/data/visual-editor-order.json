@@ -7,8 +7,8 @@
     "factors-definition",
     "multiples-definition",
     "factors-multiples-grid-guidance",
-    "factors-multiples-grid",
     "factors-multiples-question",
+    "factors-multiples-grid",
     "factors-multiples-challenge-answer",
     "factors-multiples-answer",
     "factors-multiples-challenge",
@@ -100,7 +100,8 @@
         [
           "factors-definition",
           "multiples-definition",
-          "factors-multiples-grid-guidance"
+          "factors-multiples-grid-guidance",
+          "factors-multiples-question"
         ],
         [
           "factors-multiples-grid"
@@ -111,18 +112,6 @@
         "gap": "lg",
         "reverse": false,
         "align": "start"
-      }
-    },
-    {
-      "id": "layout-factors-multiples-question",
-      "type": "stack",
-      "columns": [
-        [
-          "factors-multiples-question"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
       }
     },
     {
