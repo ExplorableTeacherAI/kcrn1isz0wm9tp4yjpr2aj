@@ -15,7 +15,7 @@ export const factorsAndMultiplesBlocks: ReactElement[] = [
 
     <StackLayout key="layout-lesson-overview" maxWidth="xl">
         <Block id="lesson-overview" padding="sm">
-            <EditableParagraph id="para-lesson-overview" blockId="lesson-overview">By the end of this lesson you will be able to find the highest common factor (HCF) and the lowest common multiple (LCM) of two numbers by breaking them into their prime building blocks. We start from the very beginning, so nothing is assumed. /</EditableParagraph>
+            <EditableParagraph id="para-lesson-overview" blockId="lesson-overview">By the end of this lesson you will be able to find the highest common factor (HCF) and the lowest common multiple (LCM) of two numbers by breaking them into their prime building blocks. We start from the very beginning, so nothing is assumed.</EditableParagraph>
         </Block>
     </StackLayout>,
 
