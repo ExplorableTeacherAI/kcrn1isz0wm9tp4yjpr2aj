@@ -107,26 +107,20 @@
     },
     {
       "id": "layout-multiples-definition",
-      "type": "stack",
+      "type": "split",
       "columns": [
         [
           "multiples-definition"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
-      }
-    },
-    {
-      "id": "layout-factors-multiples-grid",
-      "type": "stack",
-      "columns": [
+        ],
         [
           "factors-multiples-grid"
         ]
       ],
       "props": {
-        "maxWidth": "2xl"
+        "ratio": "1:1",
+        "gap": "lg",
+        "reverse": false,
+        "align": "start"
       }
     },
     {
