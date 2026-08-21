@@ -21,7 +21,7 @@ export const factorsAndMultiplesBlocks: ReactElement[] = [
 
     <StackLayout key="layout-factors-multiples-heading" maxWidth="xl">
         <Block id="factors-multiples-heading" padding="sm">
-            <EditableH2 id="h2-factors-multiples-heading" blockId="factors-multiples-heading">1. Factors and Multiples hi</EditableH2>
+            <EditableH2 id="h2-factors-multiples-heading" blockId="factors-multiples-heading">1. Factors and Multiples</EditableH2>
         </Block>
     </StackLayout>,
 
